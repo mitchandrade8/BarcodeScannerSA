@@ -58,9 +58,9 @@
 				743BC84B2A12E6650068C0AA /* BarcodeScannerSAApp.swift */,
 				743BC84D2A12E6650068C0AA /* BarcodeScannerView.swift */,
 				743BC8592A1356550068C0AA /* ScannerVC.swift */,
+				743BC85B2A135C7E0068C0AA /* ScannerView.swift */,
 				743BC84F2A12E6660068C0AA /* Assets.xcassets */,
 				743BC8512A12E6660068C0AA /* Preview Content */,
-				743BC85B2A135C7E0068C0AA /* ScannerView.swift */,
 			);
 			path = BarcodeScannerSA;
 			sourceTree = "<group>";
