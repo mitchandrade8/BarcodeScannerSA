@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct AlertItem {
+struct AlertItem: Identifiable {
+    let id = UUID()
     let title: String
     let message: String
     let dismissButton: Alert.Button
@@ -33,7 +34,7 @@ struct BarcodeScannerView: View {
     var body: some View {
         NavigationView {
             VStack {
-                ScannerView(scannedCode: $scannedCode)
+                ScannerView(scannedCode: $scannedCode, alertItem: $alertItem)
                     .frame(maxWidth: .infinity, maxHeight: 300)
                 
                 Spacer().frame(height: 60)
@@ -49,7 +50,13 @@ struct BarcodeScannerView: View {
                 
             }
             .navigationTitle("Barcode Scanner")
-           
+            .alert(item: $alertItem) { alertItem in
+                Alert(
+                    title: Text(alertItem.title),
+                    message: Text(alertItem.message),
+                    dismissButton: alertItem.dismissButton
+                )
+            }
         }
     }
 }
