@@ -13,12 +13,10 @@ enum CameraError {
     case invalidScannedValue
 }
 
-
 protocol ScannerVCDelegate: class {
     func didFind(barcode: String)
     func didSurface(error: CameraError)
 }
-
 
 final class ScannerVC: UIViewController {
     
@@ -33,12 +31,10 @@ final class ScannerVC: UIViewController {
     
     required init?(coder: NSCoder) { fatalError("init(coder:) has not been implemented") }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCaptureSession()
     }
-    
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -91,7 +87,6 @@ final class ScannerVC: UIViewController {
         captureSession.startRunning()
     }
 }
-
 
 extension ScannerVC: AVCaptureMetadataOutputObjectsDelegate {
     
