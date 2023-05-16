@@ -12,6 +12,7 @@
 		743BC8502A12E6660068C0AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 743BC84F2A12E6660068C0AA /* Assets.xcassets */; };
 		743BC8532A12E6660068C0AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 743BC8522A12E6660068C0AA /* Preview Assets.xcassets */; };
 		743BC85A2A1356550068C0AA /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743BC8592A1356550068C0AA /* ScannerVC.swift */; };
+		743BC85C2A135C7E0068C0AA /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743BC85B2A135C7E0068C0AA /* ScannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		743BC84F2A12E6660068C0AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		743BC8522A12E6660068C0AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		743BC8592A1356550068C0AA /* ScannerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
+		743BC85B2A135C7E0068C0AA /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				743BC8592A1356550068C0AA /* ScannerVC.swift */,
 				743BC84F2A12E6660068C0AA /* Assets.xcassets */,
 				743BC8512A12E6660068C0AA /* Preview Content */,
+				743BC85B2A135C7E0068C0AA /* ScannerView.swift */,
 			);
 			path = BarcodeScannerSA;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				743BC85A2A1356550068C0AA /* ScannerVC.swift in Sources */,
+				743BC85C2A135C7E0068C0AA /* ScannerView.swift in Sources */,
 				743BC84E2A12E6650068C0AA /* BarcodeScannerView.swift in Sources */,
 				743BC84C2A12E6650068C0AA /* BarcodeScannerSAApp.swift in Sources */,
 			);
